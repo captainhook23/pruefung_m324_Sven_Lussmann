@@ -4,6 +4,19 @@ import pluginJs from "@eslint/js";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  { languageOptions: { globals: { ...globals.browser, ...globals.mocha } } },
+  { 
+    languageOptions: 
+    { 
+      globals: 
+      { 
+        ...globals.browser, 
+        ...globals.mocha 
+      } 
+    } ,
+    rules:
+    {
+      "eqeqeq": "error",
+    }
+  },
   pluginJs.configs.recommended,
 ];
