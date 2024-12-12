@@ -1,25 +1,22 @@
-import globals from 'globals';
-import pluginJs from '@eslint/js';
+import globals from "globals";
+import pluginJs from "@eslint/js";
 //import mochaPlugin from 'eslint-plugin-mocha';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  {
-    languageOptions:
-      {
-        globals:
-          {
-            ...globals.browser,
-            ...globals.mocha,
-          },
-      },
+  { 
+    languageOptions: 
+    { 
+      globals: 
+      { 
+        ...globals.browser, 
+        ...globals.mocha 
+      } 
+    } ,
     rules:
-      {
-        eqeqeq:
-          'error',
-      },
+    {
+      "eqeqeq": "error",
+    }
   },
-  pluginJs
-    .configs
-    .recommended,
+  pluginJs.configs.recommended,
 ];
