@@ -1,4 +1,4 @@
-import chalk from "chalk";
+import c"halk* from "chalk";
 
 console.log(chalk.green("Sven Lussmann"));
 console.log(chalk.red("M324"));
