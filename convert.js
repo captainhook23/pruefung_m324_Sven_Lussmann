@@ -1,5 +1,5 @@
 import fs from 'fs';
-import {marked} from 'marked';
+import { marked } from 'marked';
 
 // Lese die task-3.md Datei
 fs.readFile('task-3.md', 'utf8', (err, data) => {
