@@ -4,6 +4,7 @@ console.log(chalk.green("Sven Lussmann"));
 console.log(chalk.red("M324"));
 console.log(chalk.blue("Prüfung"));
 
-if (5==5) {
+let a = 5;
+if (a===5) {
     console.log(chalk.green("5==5"));
 }
